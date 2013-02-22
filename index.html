@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Service Listing - Protótipo</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+<div id="header" class="clearfix">
+	<div class="wrapper">
+        <div class="userControl" style="display: none">
+            <ul onmouseout="$('.userControl ul').hide();">
+                <li>Minha Conta</li>
+                <li>Preferências</li>
+                <li>Sair</li>
+            </ul>
+            <button class="blueButton" onclick="$('.userControl ul').toggle();">Nome do Usuário</button>
+        </div>
+        <div class="loginControl">
+            <button class="blueButton" onclick="$('#loginForm').toggle();">Entrar</button>
+            <button class="greyButton" onclick="location.href='registration.html'">Sou Novo Aqui</button>
+            
+            <form id="loginForm" class="systemMenu" action="/registro/login/" method="post">
+                <div class="arrowUp"></div>
+                <input id="loginUsername" name="username" placeholder="Usuário ou E-mail">
+                <input id="loginPassword" name="password" placeholder="Senha" type="password">
+                <a href="/registro/password_reset/" class="defaultLink">Esqueci minha senha</a>
+                <button id="loginSend" class="blueButton" type="submit">Ok</button>
+                <button id="loginSignUp" class="greyButton" onclick="window.location='/users/registeruser/'" type="button">Cadastrar</button>
+            </form>
+        </div>
+        <ul class="menu">
+            <li><a href="LINKAR PARA A SESSAO">Nosso Serviço</a></li>
+            <li><a href="LINKAR PARA A SESSAO">Como Funciona</a></li>
+            <li><a href="LINKAR PARA A SESSAO">FAQ</a></li>
+            <li><a href="LINKAR PARA A SESSAO">Contato</a></li>
+        </ul>
+    </div>
+</div>
+<div id="content">
+	<div id="showcase"></div>
+    <div id="serviceList" class="wrapper clearfix">
+    	<p>Contamos com mais de XXXXX profissionais cadastrados em YYYYYYY categorias de serviço. <button class="blueButton" onclick="">Ver Lista Completa</button></p>
+        <ul>
+        	<h2>Casa</h2>
+        	<li><a href="LINKAR PARA CATEGORIA">Limpeza</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Fiação</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Encanamento</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Arcondicionado</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Pintura</a></li>
+        </ul>
+        <ul>
+        	<h2>Jardim</h2>
+        	<li><a href="LINKAR PARA CATEGORIA">Paisagismo</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Poda</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Jardinagem</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Irrigação</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Iluminação</a></li>
+        </ul>
+        <ul>
+        	<h2>Saúde</h2>
+        	<li><a href="LINKAR PARA CATEGORIA">Odontologia</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Dermatologia</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Cuidadores</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Oftamologia</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Pediatria</a></li>
+        </ul>
+        <ul>
+        	<h2>Automóveis</h2>
+        	<li><a href="LINKAR PARA CATEGORIA">Restauração</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Personalização</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Borracharia</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Compra e Venda</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Tranmissão</a></li>
+        </ul>
+        <ul>
+        	<h2>Outros</h2>
+        	<li><a href="LINKAR PARA CATEGORIA">Limpeza</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Fiação</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Encanamento</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Arcondicionado</a></li>
+            <li><a href="LINKAR PARA CATEGORIA">Pintura</a></li>
+        </ul>
+    </div>
+</div>
+<script>
+	setup();
+</script>
+</body>
+</html>

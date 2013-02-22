@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+body {
+	background: rgb(255,255,255);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(244,244,244,1)));
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=1 );
+}
+
+.wrapper {
+	width: 644px;
+	margin: 0 auto;
+}
+
+.wrapper > .intro {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 32px;
+	margin-top: 32px;
+}
+
+.intro {
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 32px;
+}
+
+form#buyerRegister img, form#ownerRegister img {
+	position: relative;
+	left: -22px;
+}
+
+.leftColumn {
+	float: left;
+}
+
+.rightColumn {
+	float: left;
+}
+
+.formStrip {
+	box-sizing: border-box;
+	width: 322px;
+	padding: 32px;
+}
+
+.formstrip .intro {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 32px 0;
+}
+
+.formStrip input {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	width: 237px;
+	height: 23px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-top: 2px;
+	margin-bottom: 8px;
+	border-right: none;
+	font-size: 11px;
+	clear: left;
+}
+
+.formStrip span {
+	font-size: 10px;
+}
+
+.formStrip p {
+	padding-bottom: 16px;
+}
+
+h3 {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #D40000;
+}
+
+.description {
+	height: 40px;
+}
+
+input.shortField {
+	width: 106px;
+}
+
+input.cnpj {
+	display: inline-block;
+	width: 68px;
+}
+
+input.digit {
+	display: inline-block;
+	margin-left: 4px;
+	width: 32px;
+}
+
+input.time {
+	display: inline-block;
+	margin-left: 4px;
+	width: 56px;
+}
+
+.sectionHeader div {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	border-bottom: #CCC solid thin;
+}
+
+.formStrip ul {
+	margin: 0;
+	padding: 0;
+}
+
+.intro .navigator {
+	display: block;
+	margin: 8px 0 16px;
+	border: none;
+	border-radius: 6px;
+	background: none;
+	box-shadow: none;
+	text-align: left;
+	font-size: 11px;
+}
+
+.intro .navigator li {
+	display: block;
+	float: left;
+	padding: 4px 8px;
+	margin: 0;
+	margin-right: 4px;
+	line-height: 16px;
+}
+
+.formStrip ul .controls{
+	float: right;
+	width: auto;
+	margin: 0;
+}
+
+.wrapper .controls button {
+	float: left;
+	height: 26px;
+	margin: 0;
+	margin-left: 4px;
+}
+
+.controls {
+	width: 100%;
+	margin: 16px 0;
+}
+
+.controls button {
+	float: left;
+	height: 26px;
+	margin: 0;
+	margin-right: 4px;
+}
+
+.controls button:first-child {
+	margin-left: 0;
+}
+
+
+.intro .controls .button {
+	float: right;
+}
+
+.infoBlock {
+	margin-top: 32px;
+}
+
+.arrowLeft {
+	margin-top: 5px;
+	background: url(/static/imgs/leftArrowRed.png) no-repeat;
+}
+
+/*mox-hack*/
+
+@-moz-document url-prefix() {
+	.wrapper > .intro {
+		padding: 0;
+	}
+	
+	.helpIcon {
+		height: 21px;
+	}
+	
+    .formStrip {
+        width: 290px;
+	}
+	
+	.formStrip input {
+		height: 17px;
+		margin-bottom: 0;
+	}
+	.rightColumn {
+		padding-left: 32px;
+		padding-right: 0;
+		float: right;
+	}
+	.leftColumn {
+		padding-left: 0;
+		padding-right: 32px;
+		float: left;
+	}
+}
