@@ -326,6 +326,7 @@ button {
 
 #header ul.menu {
 	float: right;
+	display: block;
 	clear:both;
 	margin: 10px 0;
 	text-shadow: 0 1px 0 #FFF;
@@ -333,6 +334,7 @@ button {
 
 #header ul.menu li {
 	float: left;
+	display: block;
 	padding-left: 16px;
 }
 
