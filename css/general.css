@@ -56,6 +56,20 @@ button {
 	font-size: small;
 }
 
+h3 {
+	display: block;
+	font-size: medium;
+	font-weight: normal;
+	line-height: 32px;
+	margin: 8px 0;
+	color: #1e64d8;
+}
+
+input {
+	height: 24px;
+	padding: 2px 8px;
+}
+
 .arrowUp {
 	position: absolute;
 	top: -9px;

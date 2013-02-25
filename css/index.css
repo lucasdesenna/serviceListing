@@ -42,8 +42,6 @@
 .systemMenu input {
 	display: block;
 	width: 140px;
-	height: 24px;
-	padding: 2px 8px;
 	margin: 8px;
 }
 
@@ -86,15 +84,11 @@
 	margin-bottom: 16px;
 }
 
-#serviceList p {
+#serviceList h3 {
 	display: block;
-	font-size: medium;
-	line-height: 32px;
-	margin: 8px 0;
-	color: #1e64d8;
 }
 
-#serviceList p button {
+#serviceList h3 button {
 	float: right;
 }
 
