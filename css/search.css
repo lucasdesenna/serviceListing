@@ -1,0 +1,85 @@
+#content > .wrapper {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.sidebar {
+	position: fixed;
+	width: 128px;
+	height: 100%;
+	padding: 16px 16px 16px 0;
+	border-right: #CCC solid thin;
+	box-sizing: border-box;
+}
+
+.sidebar ul li {
+	font-size: small;
+	cursor: pointer;
+}
+
+.sidebar ul li ul {
+	display: none;
+}
+
+.sidebar ul li h3 {
+	line-height: 1em;
+}
+
+.sidebar ul li ul li {
+	padding-left: 8px;
+}
+
+.resultList {
+	display: block;
+	float: left;
+	padding: 16px 16px 0 144px;
+	padding-bottom: 0;
+	box-sizing: border-box;
+}
+
+.resultList > li {
+	display: block;
+	font-size: small;
+	margin-bottom: 16px;
+}
+
+.resultList > li > img {
+	float: left;
+	display: block;
+	width: 128px;
+	height: 128px;
+}
+
+.resultList > li .info {
+	float: left;
+	padding-left: 8px;
+}
+
+.resultList > li .info h3 {
+	margin-top: 0;
+	line-height: 1em;
+}
+
+.resultList > li .info h3 a:last-child {
+	font-size: x-small;
+	font-weight: normal;
+	color: grey;
+}
+
+.resultList > li .info .rating * {
+	float: left;
+}
+
+.resultList > li .info p {
+	max-width: 656px;
+	margin: 8px 0;
+}
+
+.resultList > li .info ul {
+	font-size: smaller;
+}
+
+.resultList > li .info ul li {
+	display: inline;
+	padding-left: 8px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Service Listing - Protótipo</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/search.css" />
+</head>
+
+<body>
+<div id="header" class="clearfix">
+	<div class="wrapper">
+        <div class="userControl" style="display: none">
+            <ul onmouseout="$('.userControl ul').hide();">
+                <li>Minha Conta</li>
+                <li>Preferências</li>
+                <li>Sair</li>
+            </ul>
+            <button class="blueButton" onclick="$('.userControl ul').toggle();">Nome do Usuário</button>
+        </div>
+        <div class="loginControl">
+            <button class="blueButton" onclick="$('#loginForm').toggle();">Entrar</button>
+            <button class="greyButton" onclick="location.href='registration.html'">Sou Novo Aqui</button>
+            
+            <form id="loginForm" class="systemMenu" action="/registro/login/" method="post">
+                <div class="arrowUp"></div>
+                <input id="loginUsername" name="username" placeholder="Usuário ou E-mail">
+                <input id="loginPassword" name="password" placeholder="Senha" type="password">
+                <a href="/registro/password_reset/" class="defaultLink">Esqueci minha senha</a>
+                <button id="loginSend" class="blueButton" type="submit">Ok</button>
+            </form>
+        </div>
+        <ul class="menu clearfix">
+            <li><a href="index.html">Nosso Serviço</a></li>
+            <li><a href="LINKAR PARA A SESSAO">Como Funciona</a></li>
+            <li><a href="LINKAR PARA A SESSAO">FAQ</a></li>
+            <li><a href="LINKAR PARA A SESSAO">Contato</a></li>
+        </ul>
+    </div>
+</div>
+<div id="content">
+	<div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li onclick="toggleChildren(this)">
+                    <h3>Categoria 1</h3>
+                    <ul>
+                        <li><a href="URL DA BUSCA">Sub Categoria 1</a></li>
+                        <li><a href="URL DA BUSCA">Sub Categoria 2</a></li>
+                        <li><a href="URL DA BUSCA">Sub Categoria 3</a></li>
+                    </ul>
+                </li>
+                <li onclick="toggleChildren(this)">
+                    <h3>Categoria 2</h3>
+                    <ul>
+                        <li><a href="URL DA BUSCA">Sub Categoria 1</a></li>
+                        <li><a href="URL DA BUSCA">Sub Categoria 2</a></li>
+                        <li><a href="URL DA BUSCA">Sub Categoria 3</a></li>
+                    </ul>
+                </li>
+                <li onclick="toggleChildren(this)">
+                    <h3>Categoria 3</h3>
+                    <ul>
+                        <li><a href="URL DA BUSCA">Sub Categoria 1</a></li>
+                        <li><a href="URL DA BUSCA">Sub Categoria 2</a></li>
+                        <li><a href="URL DA BUSCA">Sub Categoria 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="searchResult">
+        	<div class="toolbar"></div>
+        	<ul class="resultList">
+            	<li class="clearfix">
+                	<img alt="Nome da Empresa"/>
+                    <div class="info">
+                    	<h3><a href="SITE DA EMPRESA" class="defaultLink">Nome da Empresa</a> <a href="SITE DA EMPRESA">www.empresa.com.br</a></h3>
+                        <div class="rating clearfix">
+                        	<div class="fullStar"></div>
+                            <div class="fullStar"></div>
+                            <div class="fullStar"></div>
+                            <div class="emptyStar"></div>
+                            <div class="emptyStar"></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin auctor euismod. Cras mattis metus ac turpis hendrerit sit amet varius mauris vestibulum. Duis aliquet faucibus ipsum in pellentesque. Quisque at urna lacus, at facilisis justo. Fusce quis nibh ante, id suscipit quam.</p>
+                        <ul>
+                        	Tags:
+                            <li><a href="URL DA BUSCA" class="defaultLink">Sub Categoria 1</a></li>
+                            <li><a href="URL DA BUSCA" class="defaultLink">Sub Categoria 2</a></li>
+                            <li><a href="URL DA BUSCA" class="defaultLink">Sub Categoria 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="clearfix">
+                	<img alt="Nome da Empresa"/>
+                    <div class="info">
+                    	<h3><a href="SITE DA EMPRESA" class="defaultLink">Nome da Empresa</a> <a href="SITE DA EMPRESA">www.empresa.com.br</a></h3>
+                        <div class="rating clearfix">
+                        	<div class="fullStar"></div>
+                            <div class="fullStar"></div>
+                            <div class="fullStar"></div>
+                            <div class="emptyStar"></div>
+                            <div class="emptyStar"></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin auctor euismod. Cras mattis metus ac turpis hendrerit sit amet varius mauris vestibulum. Duis aliquet faucibus ipsum in pellentesque. Quisque at urna lacus, at facilisis justo. Fusce quis nibh ante, id suscipit quam.</p>
+                        <ul>
+                        	Tags:
+                            <li><a href="URL DA BUSCA" class="defaultLink">Sub Categoria 1</a></li>
+                            <li><a href="URL DA BUSCA" class="defaultLink">Sub Categoria 2</a></li>
+                            <li><a href="URL DA BUSCA" class="defaultLink">Sub Categoria 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="clearfix">
+                	<img alt="Nome da Empresa"/>
+                    <div class="info">
+                    	<h3><a href="SITE DA EMPRESA" class="defaultLink">Nome da Empresa</a> <a href="SITE DA EMPRESA">www.empresa.com.br</a></h3>
+                        <div class="rating clearfix">
+                        	<div class="fullStar"></div>
+                            <div class="fullStar"></div>
+                            <div class="fullStar"></div>
+                            <div class="emptyStar"></div>
+                            <div class="emptyStar"></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin auctor euismod. Cras mattis metus ac turpis hendrerit sit amet varius mauris vestibulum. Duis aliquet faucibus ipsum in pellentesque. Quisque at urna lacus, at facilisis justo. Fusce quis nibh ante, id suscipit quam.</p>
+                        <ul>
+                        	Tags:
+                            <li><a href="URL DA BUSCA" class="defaultLink">Sub Categoria 1</a></li>
+                            <li><a href="URL DA BUSCA" class="defaultLink">Sub Categoria 2</a></li>
+                            <li><a href="URL DA BUSCA" class="defaultLink">Sub Categoria 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+	setup();
+</script>
+</body>
+</html>
