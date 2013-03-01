@@ -12,36 +12,39 @@
 <body>
 <div id="header" class="clearfix">
 	<div class="wrapper">
-        <div class="userControl" style="display: none">
-            <ul onmouseout="$('.userControl ul').hide();">
-                <li>Minha Conta</li>
-                <li>Preferências</li>
-                <li>Sair</li>
-            </ul>
-            <button class="blueButton" onclick="$('.userControl ul').toggle();">Nome do Usuário</button>
+    	<div id="logo"></div>
+        <div id="controls">
+        	<div class="userControl" style="display: none">
+                <ul onmouseout="$('.userControl ul').hide();">
+                    <li>Minha Conta</li>
+                    <li>Preferências</li>
+                    <li>Sair</li>
+                </ul>
+                <button class="blueButton" onclick="$('.userControl ul').toggle();">Nome do Usuário</button>
+            </div>
+            <div class="loginControl">
+                <button class="blueButton" onclick="$('#loginForm').toggle();">Entrar</button>
+                <button class="greyButton" onclick="location.href='registration.html'">Sou Novo Aqui</button>
+                
+                <form id="loginForm" class="systemMenu" action="/registro/login/" method="post">
+                    <div class="arrowUp"></div>
+                    <input id="loginUsername" name="username" placeholder="Usuário ou E-mail">
+                    <input id="loginPassword" name="password" placeholder="Senha" type="password">
+                    <a href="/registro/password_reset/" class="defaultLink">Esqueci minha senha</a>
+                    <button id="loginSend" class="blueButton" type="submit">Ok</button>
+                </form>
+            </div>
         </div>
-        <div class="loginControl">
-            <button class="blueButton" onclick="$('#loginForm').toggle();">Entrar</button>
-            <button class="greyButton" onclick="location.href='registration.html'">Sou Novo Aqui</button>
-            
-            <form id="loginForm" class="systemMenu" action="/registro/login/" method="post">
-                <div class="arrowUp"></div>
-                <input id="loginUsername" name="username" placeholder="Usuário ou E-mail">
-                <input id="loginPassword" name="password" placeholder="Senha" type="password">
-                <a href="/registro/password_reset/" class="defaultLink">Esqueci minha senha</a>
-                <button id="loginSend" class="blueButton" type="submit">Ok</button>
-            </form>
-        </div>
-        <ul class="menu clearfix">
-            <li><a href="index.html">Nosso Serviço</a></li>
-            <li><a href="LINKAR PARA A SESSAO">Como Funciona</a></li>
-            <li><a href="LINKAR PARA A SESSAO">FAQ</a></li>
-            <li><a href="LINKAR PARA A SESSAO">Contato</a></li>
-        </ul>
     </div>
 </div>
 <div id="content">
 	<div id="showcase"></div>
+    <ul class="menu clearfix wrapper">
+        <li><a href="index.html">Nosso Serviço</a></li>
+        <li><a href="LINKAR PARA A SESSAO">Como Funciona</a></li>
+        <li><a href="LINKAR PARA A SESSAO">FAQ</a></li>
+        <li><a href="LINKAR PARA A SESSAO">Contato</a></li>
+    </ul>
     <div id="serviceList" class="wrapper clearfix">
     	<h3>Contamos com mais de XXXXX profissionais cadastrados em YYYYYYY categorias de serviço. <button class="blueButton" onclick="">Ver Lista Completa</button></h3>
         <ul>

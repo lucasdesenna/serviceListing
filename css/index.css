@@ -8,6 +8,19 @@
 	overflow: hidden;
 }
 
+.menu {
+	display: block;
+	padding: 16px 0;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+.menu li {
+	float: left;
+	display: block;
+	padding-right: 16px;
+}
+
+
 #serviceList {
 	padding-top: 16px;
 	padding-bottom: 16px;
